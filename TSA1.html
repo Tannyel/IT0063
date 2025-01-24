@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TSA1.css">
+    <title>Resume</title>
+</head>
+
+<body>
+    <div class="button-container">
+        <button id="changeColor">Change Color</button>
+    </div>
+
+    <div class="container" id="resumeContainer">
+        <div class="header">
+            <div>
+                <h1>Gamorot, Kirk Nathaniel A.</h1>
+                <p>Address: Cainta, Rizal</p>
+                <p>Contact No.: +639276908746</p>
+                <p>Email: 202310170@fit.edu.ph</p>
+            </div>
+            <img src="files/Formal Picture.jpg" alt="Profile Picture">
+        </div>
+        <div class="section">
+            <h2>OBJECTIVE:</h2>
+            <p>To become knowledgeable in the field of HTML, CSS, and Javascript. </p>
+        </div>
+        <div class="section">
+            <h2>ACADEMIC BACKGROUNDS:</h2>
+            <p><strong>Secondary:</strong> Arellano University Bonifacio Campus </p>
+            <p><strong>Primary:</strong> Kids Holy Crown Academy </p>
+        </div>
+        <div class="section">
+            <h2>SKILLS:</h2>
+            <p> > Attention to details</p>
+            <p> > Time Management</p>
+            <p> > Adaptability</p>
+        </div>
+    </div>
+    <script>
+        const button = document.getElementById('changeColor');
+        const container = document.getElementById('resumeContainer');
+
+        button.addEventListener('click', () => {
+            container.style.backgroundColor = container.style.backgroundColor === 'pink' ? 'white' : 'pink';
+            container.style.color = container.style.backgroundColor === 'black' ? 'white' : 'black';
+        });
+    </script>
+</body>
+
+</html>
