@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap">
+    <link rel="stylesheet" href="resto.css">
+    <title>Restaurant Guide</title>
+</head>
+
+<body>
+
+    <div class="banner">Thaniel's Delicacy</div>
+
+    <div class="header">
+        <h1 class="rest_guide">RESTAURANT GUIDE</h1>
+        <p class="prod">PRODUCED BY: KN GOURMET</p>
+    </div>
+
+    <button class="main-menu">MAIN MENU</button>
+
+    <div class="container">
+        <div class="card">
+            <div class="label">Kimchi Fried Rice with Egg</div>
+            <img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2023-12-kimchi-fried-rice%2Fkimchi-fried-rice-197"
+                alt="Kimchi Fried Rice with Egg">
+            <div class="overlay">
+                <p class="hover-text">-----------------------------------------------</p>
+                <p class="hover-text">Best Tasting Kimchi Rice in the Market!</p>
+                <p class="hover-text">-----------------------------------------------</p>
+                <a href="#" class="more-btn">more</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="label">Boneless Chicken</div>
+            <img src="https://thebigmansworld.com/wp-content/uploads/2024/11/boneless-chicken-wings-recipe.jpg"
+                alt="Boneless Chicken">
+            <div class="overlay">
+                <p class="hover-text">------------------------------------</p>
+                <p class="hover-text">Better than 24 Chicken!</p>
+                <p class="hover-text">------------------------------------</p>
+                <a href="#" class="more-btn">more</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="label">Gin Basil</div>
+            <img src="https://www.southernliving.com/thmb/wdNS-AqparYvvY61vMxqUPPeWLk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Basil_Smash_008-20f5cdc32f5a4eaf8a48b4f2c9483063.jpg"
+                alt="Gin Basil">
+            <div class="overlay">
+                <p class="hover-text">----------------------------------------------</p>
+                <p class="hover-text">Get wasted while looking cool!</p>
+                <p class="hover-text">----------------------------------------------</p>
+                <a href="#" class="more-btn">more</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="label">Sunrise Tequila</div>
+            <img src="https://images.immediate.co.uk/production/volatile/sites/30/2018/04/tequila-sunrise-18167a1.jpg"
+                alt="Sunrise Tequila">
+            <div class="overlay">
+                <p class="hover-text">-------------------------------------------</p>
+                <p class="hover-text">For Pretty girlies only! (Gays included of course)</p>
+                <p class="hover-text">-------------------------------------------</p>
+                <a href="#" class="more-btn">more</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="left-section">
+                <h2 class="vertical-text" id="modal-name"></h2>
+            </div>
+            <div class="middle-section">
+                <img id="modal-image" src="" alt="Expanded Food">
+            </div>
+            <div class="right-section">
+                <h3 id="modal-title"></h3>
+                <div class="info">
+                    <div class="left-info">
+                        <p><strong>Address:</strong> <span id="modal-address"></span></p>
+                    </div>
+                    <div class="right-info">
+                        <p><strong>Category:</strong> <span id="modal-category"></span></p>
+                        <p><strong>Open:</strong> <span id="modal-open"></span></p>
+                        <p><strong>Price:</strong> <span id="modal-price"></span></p>
+                    </div>
+                </div>
+
+                <p id="modal-description" class="description"></p>
+            </div>
+        </div>
+        <span class="close-btn">&times;</span>
+    </div>
+
+    <script src="resto.js"></script>
+</body>
+
+</html>
